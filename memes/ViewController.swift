@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController , UICollectionViewDelegate, UICollectionViewDataSource, UISearchBarDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +20,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    @IBOutlet weak var searchBar: UISearchBar!
+    
+    
 }
 
