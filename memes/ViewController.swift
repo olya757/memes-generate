@@ -19,6 +19,8 @@ class Pair{
 
 class ViewController: UIViewController , UICollectionViewDelegate, UICollectionViewDataSource, UISearchBarDelegate{
 
+    @IBOutlet weak var btnNew: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         var i : Int = 0
@@ -75,6 +77,13 @@ class ViewController: UIViewController , UICollectionViewDelegate, UICollectionV
             item in return item.text.lowercased().contains(str.lowercased())
         }
         collectionView.reloadData()
+    }
+    
+    @IBAction func createNew(_ sender: Any) {
+        let myStoryBoard = self.storyboard
+        let myWindowController = myStoryBoard?.instantiateViewController(withIdentifier: "CreateMemViewController") as! CreateMemViewController
+        self.present(myWindowController, animated: true, completion: nil)
+        
     }
     
 }

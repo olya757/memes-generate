@@ -18,6 +18,10 @@
 		A9C3741D2105250F00A5BE7B /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9C374192105250F00A5BE7B /* image1.jpg */; };
 		A9C3741E2105250F00A5BE7B /* benladon.png in Resources */ = {isa = PBXBuildFile; fileRef = A9C3741A2105250F00A5BE7B /* benladon.png */; };
 		A9C3741F2105250F00A5BE7B /* gendalf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9C3741B2105250F00A5BE7B /* gendalf.jpg */; };
+		A9C37422210533ED00A5BE7B /* CreateMemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C37420210533ED00A5BE7B /* CreateMemViewController.swift */; };
+		A9C374262105398500A5BE7B /* iconAdd.png in Resources */ = {isa = PBXBuildFile; fileRef = A9C374242105398500A5BE7B /* iconAdd.png */; };
+		A9C374272105398500A5BE7B /* iconBack.png in Resources */ = {isa = PBXBuildFile; fileRef = A9C374252105398500A5BE7B /* iconBack.png */; };
+		A9C374292105471600A5BE7B /* CreateMemViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C374282105471600A5BE7B /* CreateMemViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		A9C374192105250F00A5BE7B /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
 		A9C3741A2105250F00A5BE7B /* benladon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = benladon.png; sourceTree = "<group>"; };
 		A9C3741B2105250F00A5BE7B /* gendalf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gendalf.jpg; sourceTree = "<group>"; };
+		A9C37420210533ED00A5BE7B /* CreateMemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMemViewController.swift; sourceTree = "<group>"; };
+		A9C374242105398500A5BE7B /* iconAdd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconAdd.png; sourceTree = "<group>"; };
+		A9C374252105398500A5BE7B /* iconBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconBack.png; sourceTree = "<group>"; };
+		A9C374282105471600A5BE7B /* CreateMemViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateMemViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +83,8 @@
 				A9C3740821051B7E00A5BE7B /* Assets.xcassets */,
 				A9C3740A21051B7E00A5BE7B /* LaunchScreen.storyboard */,
 				A9C3740D21051B7E00A5BE7B /* Info.plist */,
+				A9C37420210533ED00A5BE7B /* CreateMemViewController.swift */,
+				A9C374282105471600A5BE7B /* CreateMemViewController.storyboard */,
 			);
 			path = memes;
 			sourceTree = "<group>";
@@ -82,6 +92,8 @@
 		A9C374172105242800A5BE7B /* Pictures */ = {
 			isa = PBXGroup;
 			children = (
+				A9C374242105398500A5BE7B /* iconAdd.png */,
+				A9C374252105398500A5BE7B /* iconBack.png */,
 				A9C3741A2105250F00A5BE7B /* benladon.png */,
 				A9C3741B2105250F00A5BE7B /* gendalf.jpg */,
 				A9C374192105250F00A5BE7B /* image1.jpg */,
@@ -152,9 +164,12 @@
 				A9C3741E2105250F00A5BE7B /* benladon.png in Resources */,
 				A9C3740921051B7E00A5BE7B /* Assets.xcassets in Resources */,
 				A9C3741F2105250F00A5BE7B /* gendalf.jpg in Resources */,
+				A9C374262105398500A5BE7B /* iconAdd.png in Resources */,
 				A9C3741621051C4B00A5BE7B /* CollectionViewCell.xib in Resources */,
 				A9C3741C2105250F00A5BE7B /* putin.jpg in Resources */,
+				A9C374292105471600A5BE7B /* CreateMemViewController.storyboard in Resources */,
 				A9C3740721051B7C00A5BE7B /* Main.storyboard in Resources */,
+				A9C374272105398500A5BE7B /* iconBack.png in Resources */,
 				A9C3741D2105250F00A5BE7B /* image1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -168,6 +183,7 @@
 			files = (
 				A9C3740421051B7C00A5BE7B /* ViewController.swift in Sources */,
 				A9C3740221051B7C00A5BE7B /* AppDelegate.swift in Sources */,
+				A9C37422210533ED00A5BE7B /* CreateMemViewController.swift in Sources */,
 				A9C3741521051C4B00A5BE7B /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
