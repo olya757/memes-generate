@@ -14,6 +14,10 @@
 		A9C3740C21051B7E00A5BE7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C3740A21051B7E00A5BE7B /* LaunchScreen.storyboard */; };
 		A9C3741521051C4B00A5BE7B /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C3741321051C4B00A5BE7B /* CollectionViewCell.swift */; };
 		A9C3741621051C4B00A5BE7B /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9C3741421051C4B00A5BE7B /* CollectionViewCell.xib */; };
+		A9C3741C2105250F00A5BE7B /* putin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9C374182105250F00A5BE7B /* putin.jpg */; };
+		A9C3741D2105250F00A5BE7B /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9C374192105250F00A5BE7B /* image1.jpg */; };
+		A9C3741E2105250F00A5BE7B /* benladon.png in Resources */ = {isa = PBXBuildFile; fileRef = A9C3741A2105250F00A5BE7B /* benladon.png */; };
+		A9C3741F2105250F00A5BE7B /* gendalf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9C3741B2105250F00A5BE7B /* gendalf.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		A9C3740D21051B7E00A5BE7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9C3741321051C4B00A5BE7B /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		A9C3741421051C4B00A5BE7B /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		A9C374182105250F00A5BE7B /* putin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = putin.jpg; sourceTree = "<group>"; };
+		A9C374192105250F00A5BE7B /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
+		A9C3741A2105250F00A5BE7B /* benladon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = benladon.png; sourceTree = "<group>"; };
+		A9C3741B2105250F00A5BE7B /* gendalf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gendalf.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 		A9C3740021051B7C00A5BE7B /* memes */ = {
 			isa = PBXGroup;
 			children = (
+				A9C374172105242800A5BE7B /* Pictures */,
 				A9C3741321051C4B00A5BE7B /* CollectionViewCell.swift */,
 				A9C3741421051C4B00A5BE7B /* CollectionViewCell.xib */,
 				A9C3740121051B7C00A5BE7B /* AppDelegate.swift */,
@@ -68,6 +77,17 @@
 				A9C3740D21051B7E00A5BE7B /* Info.plist */,
 			);
 			path = memes;
+			sourceTree = "<group>";
+		};
+		A9C374172105242800A5BE7B /* Pictures */ = {
+			isa = PBXGroup;
+			children = (
+				A9C3741A2105250F00A5BE7B /* benladon.png */,
+				A9C3741B2105250F00A5BE7B /* gendalf.jpg */,
+				A9C374192105250F00A5BE7B /* image1.jpg */,
+				A9C374182105250F00A5BE7B /* putin.jpg */,
+			);
+			path = Pictures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,9 +149,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9C3740C21051B7E00A5BE7B /* LaunchScreen.storyboard in Resources */,
+				A9C3741E2105250F00A5BE7B /* benladon.png in Resources */,
 				A9C3740921051B7E00A5BE7B /* Assets.xcassets in Resources */,
+				A9C3741F2105250F00A5BE7B /* gendalf.jpg in Resources */,
 				A9C3741621051C4B00A5BE7B /* CollectionViewCell.xib in Resources */,
+				A9C3741C2105250F00A5BE7B /* putin.jpg in Resources */,
 				A9C3740721051B7C00A5BE7B /* Main.storyboard in Resources */,
+				A9C3741D2105250F00A5BE7B /* image1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
