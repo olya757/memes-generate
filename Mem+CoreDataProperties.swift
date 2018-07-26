@@ -17,8 +17,8 @@ extension Mem {
         return NSFetchRequest<Mem>(entityName: "Mem")
     }
 
-    @NSManaged public var imageName: String?
-    @NSManaged public var textDescription: String?
     @NSManaged public var textName: String?
+    @NSManaged public var textDescription: String?
+    @NSManaged public var imageName: String?
 
 }
