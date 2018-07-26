@@ -24,10 +24,17 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </imageView>
                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9q-8K-RKW">
-                        <rect key="frame" x="99" y="0.0" width="128" height="77"/>
+                        <rect key="frame" x="99" y="0.0" width="128" height="31"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bav-3K-d1F">
+                        <rect key="frame" x="99" y="32" width="128" height="45"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
                 </subviews>
@@ -36,6 +43,7 @@
             <size key="customSize" width="227" height="77"/>
             <connections>
                 <outlet property="ivImage" destination="rnR-21-Spf" id="Uch-jo-hOD"/>
+                <outlet property="tvDescription" destination="Bav-3K-d1F" id="YdE-ux-vRc"/>
                 <outlet property="tvText" destination="I9q-8K-RKW" id="9AY-mC-5rc"/>
             </connections>
             <point key="canvasLocation" x="-17.5" y="-57.5"/>

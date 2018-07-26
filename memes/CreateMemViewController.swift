@@ -15,25 +15,17 @@ class CreateMemViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
         if let mem = mem {
             tvName.text = mem.textName
             tvDescription.text = mem.textDescription
-            ivImage.image = UIImage(named: mem.imageName!)
-            imageName = mem.imageName
+            imageName = mem.imageName!
         }
-        
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
-        ivImage.isUserInteractionEnabled = true
-        ivImage.addGestureRecognizer(tapGestureRecognizer)
+        ivImage.image = UIImage(named: imageName)
     }
     
-    @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
-    {
-        let tappedImage = tapGestureRecognizer.view as! UIImageView
-        
-        // Your action
-    }
-    var imageName : String?
+    
+    var imageName : String = "putin.jpg"
     
    /* required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -58,7 +50,7 @@ class CreateMemViewController: UIViewController {
     @IBOutlet weak var ivImage: UIImageView!
     
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+   /* override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
          if tvName.text!.isEmpty {
             let alert = UIAlertController(title: "Validation error", message: "Input the name of the Customer!", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
@@ -73,10 +65,10 @@ class CreateMemViewController: UIViewController {
         if let mem = mem {
             mem.textName = tvName.text
             mem.textDescription = tvDescription.text
-            mem.imageName = imageName!
+            mem.imageName = imageName
             CoreDataManager.instance.saveContext()
         }
-    }
+    }*/
     func saveCustomer() -> Bool {
         // Validation of required fields
         if tvName.text!.isEmpty {
@@ -88,13 +80,12 @@ class CreateMemViewController: UIViewController {
         // Creating object
         if mem == nil {
             mem = Mem()
-            imageName = "gendalf.jpg"
         }
         // Saving object
         if let mem = mem {
             mem.textName = tvName.text
             mem.textDescription = tvDescription.text
-            mem.imageName = imageName!
+            mem.imageName = imageName
             CoreDataManager.instance.saveContext()
         }
         return true

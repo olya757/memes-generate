@@ -19,5 +19,6 @@ class CollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var tvText: UITextView!
     
+    @IBOutlet weak var tvDescription: UITextView!
     
 }

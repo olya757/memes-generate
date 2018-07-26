@@ -51,9 +51,10 @@ class ViewController: UIViewController , UICollectionViewDelegate, UICollectionV
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
         cell.ivImage.image=UIImage(named: filtred[indexPath.item].imageName!)
         cell.tvText.text = filtred[indexPath.item].textName
-        
+        cell.tvDescription.text = filtred[indexPath.item].textDescription
         cell.ivImage.frame = CGRect(x: 0, y: 0, width: Int(self.view.frame.size.width)/2, height: 150)
-        cell.tvText.frame = CGRect(x: Int(self.view.frame.size.width)/2, y: 0, width: Int(self.view.frame.size.width)/2, height: 150)
+        cell.tvText.frame = CGRect(x: Int(self.view.frame.size.width)/2, y: 0, width: Int(self.view.frame.size.width)/2, height: 50)
+        cell.tvDescription.frame = CGRect(x: Int(self.view.frame.size.width)/2, y: 50, width: Int(self.view.frame.size.width)/2, height: 100)
         return cell
     }
     
@@ -65,7 +66,7 @@ class ViewController: UIViewController , UICollectionViewDelegate, UICollectionV
         }
 
         filtred = fetchedResultsController.fetchedObjects as! [Mem]
-        collectionView.reloadData()
+        reloadData(str: searchBar.text!)
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
@@ -91,7 +92,7 @@ class ViewController: UIViewController , UICollectionViewDelegate, UICollectionV
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let mem = fetchedResultsController.object(at: indexPath) as? Mem
+        let mem = filtred[indexPath.item]
         performSegue(withIdentifier: "CreateMem", sender: mem)
     }
     
